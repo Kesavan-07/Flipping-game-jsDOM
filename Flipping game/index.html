@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <title>Flipping game</title>
+</head>
+
+<body style="background-image: url('bg-avengers.jpg'); background-size: cover; background-position: center;"
+    class="flex flex-col items-center">
+    
+    <header class="bg-opacity-45 text-black w-full p-4 text-center">
+        <h1 class="text-3xl font-bold">Memory Card Game</h1>
+        <div class="flex justify-center mt-2 gap-4">
+            <div class="text-lg">Time: <span id="timer">0</span>s</div>
+            <div class="text-lg">Flips: <span id="flip-counter">0</span></div>
+        </div>
+        <button id="restart-btn" class="mt-4 bg-sky-400 hover:bg-sky-500 text-white py-2 px-4 rounded">Restart</button>
+    </header>
+    <main class="p-4 w-full">
+        <div id="game-board" class="grid grid-cols-6 gap-6 mx-2%"></div>
+    </main>
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
